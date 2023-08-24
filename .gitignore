@@ -1,0 +1,7 @@
+*.elf
+*.asm
+*-diffs.txt
+armv7/arm-disasm
+benchmark-cfiles/*
+ppc/
+tricore/

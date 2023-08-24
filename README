@@ -1,0 +1,6 @@
+1. install the ARM toolchain (arm-none-eabi) and have it on your path (should be in most package repositories)
+2. Take arm-disasm out of otawa-project/armv7t/disasm and drop it in the armv7 folder
+3. Ensure the benchmarks you wish to compile are in benchmark_cfiles
+4. run "make" in the project's root directory
+
+You will have the output of "diff" for each benchmark, disassembled by both gliss and objdump, added to the root directory with a name like "<benchmarkname>-<ISA>-diffs.txt"
