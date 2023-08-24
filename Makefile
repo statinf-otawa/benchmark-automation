@@ -2,7 +2,8 @@
 
 armv7: 
 	cd benchmark_cfiles && $(MAKE) armv7 && mv *.elf ../armv7
-	cd armv7 && $(MAKE) && mv *-diffs.txt ../
+	cd armv7 && $(MAKE) && mv *-diffs.txt ../diffs
+
 
 # thumbv7: 
 # 	cd benchmark_cfiles && $(MAKE) thumbv7 && mv *.elf ../thumbv7
@@ -11,4 +12,4 @@ armv7:
 clean: 
 	-cd benchmark_cfiles && $(MAKE) clean
 	-cd armv7 && $(MAKE) clean-all
-	-rm *-diffs.txt
+	-rm diffs/*-diffs.txt
