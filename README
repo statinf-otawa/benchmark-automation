@@ -6,4 +6,6 @@
 
 You will have the output of "diff" for each benchmark, disassembled by both gliss and objdump, added to the root directory with a name like "<benchmarkname>-<ISA>-diffs.txt"
 
+For best results from Diff, you want to use the fork of ARMv7's gliss repository here: https://github.com/statinf-otawa/armv7t
+
 Make targets: all, armv7, thumbv7, clean
